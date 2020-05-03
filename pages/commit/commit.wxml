@@ -1,0 +1,47 @@
+<view class="cu-card dynamic ">
+  <view class="cu-item shadow">
+    <view class="cu-list menu-avatar">
+      <view class="cu-item">
+        <view class="cu-avatar round lg" style="background-image:url({{'https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIn3b21yeuz384y4mm1dAhMU9IiaSe3BLOU5NSdfhdqibTc6jniaGf30dbItecsUZoEuqicGomEsX8qAA/132'}});"></view>
+        <view class="content flex-sub">
+          <view>{{data.name}}</view>
+            <view class="text-gray text-sm flex justify-between">
+            {{data.createTime}}
+          </view>
+          </view>
+        </view>
+      </view>
+   
+    <view class="text-content">
+    {{data.detail}}
+    </view>
+    <image style='width:100%' src="{{'https://cftiger.mynatapp.cc'+data.imageUrl}}" mode='widthFix' ></image>
+     </view>
+  </view>
+  <view class="cu-list menu card-menu margin-top ">
+    <view class="cu-item ">
+      <view class="content">
+        <image src="/images/name.png" class="png" mode="aspectFit"></image>
+        <text class="text-content">{{data.jiandao}}</text>
+      </view>
+    </view>
+    <view class="cu-item ">
+      <view class="content">
+        <image src="/images/contact.png" class="png" mode="aspectFit"></image>
+        <text class="text-content">{{data.contactWay}}</text>
+      </view>
+    </view>
+    <view class="cu-item ">
+      <view class="content">
+        <image src="/images/number.png" class="png" mode="aspectFit"></image>
+        <text class="text-content">{{data.phone}}</text>
+      </view>
+    </view>
+  </view>
+
+
+
+
+
+
+ 

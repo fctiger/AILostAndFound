@@ -1,0 +1,16 @@
+<!--pages/goodperson/goodperson.wxml-->
+<scroll-view scroll-y class="indexes" scroll-into-view="indexes-{{listCurID}}" style="height:calc(100vh - {{CustomBar}}px - 50px)" scroll-with-animation="true" enable-back-to-top="true">
+    <view class="cu-list menu-avatar no-padding">
+      <view class="cu-item" wx:for="{{1}}" wx:key wx:for-index="sub">
+        <image  class="cu-avatar round lg" src="{{'https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIn3b21yeuz384y4mm1dAhMU9IiaSe3BLOU5NSdfhdqibTc6jniaGf30dbItecsUZoEuqicGomEsX8qAA/132'}}"></image>
+        <view class="content">
+          <view class="text-grey">
+            <text class="text-abc">Aaron_Kitty</text>君</view>
+          <view class="text-gray text-sm">
+            已经发布三个失物招领了
+          </view>
+        </view>
+      </view>
+    </view>
+ 
+</scroll-view>

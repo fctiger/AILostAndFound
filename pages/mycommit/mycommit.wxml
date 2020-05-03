@@ -1,0 +1,17 @@
+<view class="item-wrapper">
+    <view class="item-list" wx:for="{{itemData}}" wx:for-item="item" wx:for-index="index" wx:key="that" >
+        <view class="item-info" data-index="{{index}}" bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE"   style="left:{{item.left + 'rpx'}}"  >
+            <image class="info-img" src="{{'https://cftiger.mynatapp.cc'+item.imageUrl}}"></image>
+            <view class="info-wrapper" data-id="{{item.id}}" bindtap="tocommit">
+                <view class="info-desc">
+                    <view class="name">{{item.jiandao}}</view>
+                    <view class="time">{{item.createTime}}</view>
+                </view>
+                <view class="info-content">{{item.detail}}</view>
+            </view>
+        </view>
+        <view class="item-oper">
+            <view class="oper-delete" bindtap="itemDelete" data-index="{{index}}" data-id="{{item.id}}">删除</view>
+        </view>
+    </view>
+</view>
